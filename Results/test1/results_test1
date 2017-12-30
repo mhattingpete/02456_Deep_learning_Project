@@ -1,0 +1,15 @@
+test1:
+Model got a train loss of 0.1672 and accuracy 0.9801
+Model got a validation loss of 0.9559 and accuracy 0.6678
+Model got a test loss of 0.6712 and accuracy 0.6652
+
+Network:
+self.top_model = Sequential()
+self.top_model.add(Conv2D(input_shape=input_shape,filters=32,kernel_size=(4,4),strides=(1,1),padding='valid',activation='relu',kernel_regularizer=l2(self.regularization_factor)))
+self.top_model.add(Dropout(self.dropout_factor))
+self.top_model.add(BatchNormalization())
+self.top_model.add(Flatten())
+self.top_model.add(Dense(32, activation='relu',kernel_regularizer=l2(self.regularization_factor)))
+self.top_model.add(Dropout(self.dropout_factor))
+self.top_model.add(BatchNormalization())
+self.top_model.add(Dense(1, activation='sigmoid'))

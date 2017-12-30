@@ -1,0 +1,16 @@
+Model got a train loss of 0.5904 and accuracy 0.7171
+Model got a validation loss of 0.6302 and accuracy 0.6730
+Model got a test loss of 0.6073 and accuracy 0.6772
+
+Network:
+x = Input(input_shape)
+z = AveragePooling2D(input_shape=input_shape,pool_size=(8,8), strides=(1,1), padding='valid')(x)
+z = Flatten()(z)
+z = Dense(64, activation='relu',kernel_regularizer=l2(self.regularization_factor),kernel_initializer='truncated_normal')(z)
+z = Dropout(self.dropout_factor)(z)
+z = BatchNormalization()(z)
+z = Dense(32, activation='relu',kernel_regularizer=l2(self.regularization_factor),kernel_initializer='truncated_normal')(z)
+z = Dropout(self.dropout_factor)(z)
+z = BatchNormalization()(z)
+y = Dense(1, activation='sigmoid',kernel_regularizer=l2(self.regularization_factor),kernel_initializer='truncated_normal')(z)
+self.top_model = Model(inputs=x,outputs=y)
