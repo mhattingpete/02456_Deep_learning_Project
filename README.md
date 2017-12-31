@@ -32,7 +32,7 @@ To make the model predict on unlabeled images you should use the jupyter noteboo
 
 ## Authors
 
-* **Kim Rasmus Rylund** - [PurpleBooth](https://github.com/PurpleBooth)
+* **Kim Rasmus Rylund** - [Rylund](https://github.com/Rylund)
 * **Martin Hatting Petersen** - [mhattingpete](https://github.com/mhattingpete)
 
 ## Acknowledgments
