@@ -24,7 +24,7 @@ Note the script expects that the images are located in two folders one for each 
 
 ## Running the prediction on unlabeled images
 
-To make the model predict on unlabeled images you should use the jupyter notebook that loads some images and then runs a prediction on them.
+To make the model predict on unlabeled images you should use the jupyter notebook that loads some images and then runs a prediction on them. You can give any folder you want to the script and it will run the prediction on the images in the folder and display them with the title corresponding to the prediction on the images.
 
 ## Built With
 
