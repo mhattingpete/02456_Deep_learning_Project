@@ -67,6 +67,7 @@ class ImageClassifier:
 		return callbacks
 		
 	def retrain(self,epochs=50,model_name=None):
+		createBottlenecks = False
 		if not os.path.isfile(self.bottleneckspath+'bottleneck_train.npy') or not os.path.isfile(self.bottleneckspath+'bottleneck_validation.npy'):
 			createBottlenecks = True
 		if createBottlenecks == True:
