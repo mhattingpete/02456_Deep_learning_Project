@@ -38,5 +38,6 @@ To make the model predict on unlabeled images you should use the jupyter noteboo
 ## Acknowledgments
 
 * Inspiration of code: [Keras-transfer-learning](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
+* Another inspiration: [Tensorflow-transfer-learning](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets)
 
 
